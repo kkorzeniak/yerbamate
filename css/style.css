@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    width: 1000px;
+    height: 100%;
+    /* Czy to dobra praktyka przy takim rozwiązaniu żeby tak ustawiać wymiary strony? */
+    background-color: #98fb98;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    display: inline-block
+}
