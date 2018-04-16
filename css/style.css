@@ -4,18 +4,91 @@
 
 body {
     margin: 0;
-}
-
-#container {
-    width: 1000px;
-    height: 100%;
-    /* Czy to dobra praktyka przy takim rozwiązaniu żeby tak ustawiać wymiary strony? */
     background-color: #98fb98;
 }
 
-.item {
-    width: 150px;
-    height: 150px;
-    margin: 0;
-    display: inline-block
+#container {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
 }
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid #ff6f00;
+}
+
+#item1 {
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#item2 {
+    background-image: url(../img/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#item3 {
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#item4 {
+    background-image: url(../img/4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 111, 0, 0.6);
+    opacity: 0;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.fa {
+    position: relative;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*RESPONSIVES*/
+
+@media all and (max-width: 992px) {
+    .item {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .item {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
